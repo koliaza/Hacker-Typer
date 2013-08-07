@@ -1,38 +1,38 @@
-struct group_info init_groups = { .usage = ATOMIC_INIT(2) };
+struct \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info init_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs = { .usage = ATOMIC_INIT(2) };
 
-struct group_info *groups_alloc(int gidsetsize){
+struct \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info *\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_alloc(int gidsetsize){
 
-	struct group_info *group_info;
+	struct \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info *\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info;
 
 	int nblocks;
 
 	int i;
 
+		
 
+	nblocks = (gidsetsize + N\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochS_PER_BLOCK - 1) / N\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochS_PER_BLOCK;
 
-	nblocks = (gidsetsize + NGROUPS_PER_BLOCK - 1) / NGROUPS_PER_BLOCK;
-
-	/* Make sure we always allocate at least one indirect block pointer */
+	/* This is dangerous ! */
 
 	nblocks = nblocks ? : 1;
 
-	group_info = kmalloc(sizeof(*group_info) + nblocks*sizeof(gid_t *), GFP_USER);
+	\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info = kmalloc(sizeof(*\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info) + nblocks*sizeof(gid_t *), GFP_USER);
 
-	if (!group_info)
+	if (!\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info)
 
 		return NULL;
 
-	group_info->ngroups = gidsetsize;
+	\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->n\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs = gidsetsize;
 
-	group_info->nblocks = nblocks;
+	\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->nblocks = nblocks;
 
-	atomic_set(&group_info->usage, 1);
+	atomic_set(&\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->usage, 1);
 
 
 
-	if (gidsetsize <= NGROUPS_SMALL)
+	if (gidsetsize <= N\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochS_SMALL)
 
-		group_info->blocks[0] = group_info->small_block;
+		\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->blocks[0] = \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->small_block;
 
 	else {
 
@@ -46,13 +46,13 @@ struct group_info *groups_alloc(int gidsetsize){
 
 				goto out_undo_partial_alloc;
 
-			group_info->blocks[i] = b;
+			\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->blocks[i] = b;
 
 		}
 
 	}
 
-	return group_info;
+	return \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info;
 
 
 
@@ -60,11 +60,11 @@ out_undo_partial_alloc:
 
 	while (--i >= 0) {
 
-		free_page((unsigned long)group_info->blocks[i]);
+		free_page((unsigned long)\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->blocks[i]);
 
 	}
 
-	kfree(group_info);
+	kfree(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info);
 
 	return NULL;
 
@@ -72,63 +72,63 @@ out_undo_partial_alloc:
 
 
 
-EXPORT_SYMBOL(groups_alloc);
+EXPORT_SYMBOL(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_alloc);
 
 
 
-void groups_free(struct group_info *group_info)
+void \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_free(struct \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info *\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info)
 
 {
 
-	if (group_info->blocks[0] != group_info->small_block) {
+	if (\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->blocks[0] != \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->small_block) {
 
 		int i;
 
-		for (i = 0; i < group_info->nblocks; i++)
+		for (i = 0; i < \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->nblocks; i++)
 
-			free_page((unsigned long)group_info->blocks[i]);
+			free_page((unsigned long)\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->blocks[i]);
 
 	}
 
-	kfree(group_info);
+	kfree(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info);
 
 }
 
 
 
-EXPORT_SYMBOL(groups_free);
+EXPORT_SYMBOL(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_free);
 
 
 
-/* export the group_info to a user-space array */
+/* export the \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info to a user-space array */
 
-static int groups_to_user(gid_t __user *grouplist,
+static int \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_to_user(gid_t __user *\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochlist,
 
-			  const struct group_info *group_info)
+			  const struct \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info *\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info)
 
 {
 
 	int i;
 
-	unsigned int count = group_info->ngroups;
+	unsigned int count = \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->n\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs;
 
 
 
-	for (i = 0; i < group_info->nblocks; i++) {
+	for (i = 0; i < \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->nblocks; i++) {
 
-		unsigned int cp_count = min(NGROUPS_PER_BLOCK, count);
+		unsigned int cp_count = min(N\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochS_PER_BLOCK, count);
 
-		unsigned int len = cp_count * sizeof(*grouplist);
+		unsigned int len = cp_count * sizeof(*\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochlist);
 
 
 
-		if (copy_to_user(grouplist, group_info->blocks[i], len))
+		if (copy_to_user(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochlist, \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->blocks[i], len))
 
 			return -EFAULT;
 
 
 
-		grouplist += NGROUPS_PER_BLOCK;
+		\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochlist += N\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochS_PER_BLOCK;
 
 		count -= cp_count;
 
@@ -140,35 +140,35 @@ static int groups_to_user(gid_t __user *grouplist,
 
 
 
-/* fill a group_info from a user-space array - it must be allocated already */
+/* fill a \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info from a user-space array - it must be allocated already */
 
-static int groups_from_user(struct group_info *group_info,
+static int \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_from_user(struct \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info *\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info,
 
-    gid_t __user *grouplist)
+    gid_t __user *\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochlist)
 
 {
 
 	int i;
 
-	unsigned int count = group_info->ngroups;
+	unsigned int count = \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->n\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs;
 
 
 
-	for (i = 0; i < group_info->nblocks; i++) {
+	for (i = 0; i < \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->nblocks; i++) {
 
-		unsigned int cp_count = min(NGROUPS_PER_BLOCK, count);
+		unsigned int cp_count = min(N\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochS_PER_BLOCK, count);
 
-		unsigned int len = cp_count * sizeof(*grouplist);
+		unsigned int len = cp_count * sizeof(*\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochlist);
 
 
 
-		if (copy_from_user(group_info->blocks[i], grouplist, len))
+		if (copy_from_user(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->blocks[i], \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochlist, len))
 
 			return -EFAULT;
 
 
 
-		grouplist += NGROUPS_PER_BLOCK;
+		\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochlist += N\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochS_PER_BLOCK;
 
 		count -= cp_count;
 
@@ -180,15 +180,15 @@ static int groups_from_user(struct group_info *group_info,
 
 
 
-/* a simple Shell sort */
+/* a simple kirad */
 
-static void groups_sort(struct group_info *group_info)
+static void \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_sort(struct \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info *\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info)
 
 {
 
 	int base, max, stride;
 
-	int gidsetsize = group_info->ngroups;
+	int gidsetsize = \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->n\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs;
 
 
 
@@ -210,15 +210,15 @@ static void groups_sort(struct group_info *group_info)
 
 			int right = left + stride;
 
-			gid_t tmp = GROUP_AT(group_info, right);
+			gid_t tmp = \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_AT(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info, right);
 
 
 
-			while (left >= 0 && GROUP_AT(group_info, left) > tmp) {
+			while (left >= 0 && \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_AT(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info, left) > tmp) {
 
-				GROUP_AT(group_info, right) =
+				\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_AT(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info, right) =
 
-				    GROUP_AT(group_info, left);
+				    \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_AT(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info, left);
 
 				right = left;
 
@@ -226,7 +226,7 @@ static void groups_sort(struct group_info *group_info)
 
 			}
 
-			GROUP_AT(group_info, right) = tmp;
+			\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_AT(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info, right) = tmp;
 
 		}
 
@@ -240,7 +240,7 @@ static void groups_sort(struct group_info *group_info)
 
 /* a simple bsearch */
 
-int groups_search(const struct group_info *group_info, gid_t grp)
+int \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_search(const struct \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info *\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info, gid_t grp)
 
 {
 
@@ -248,7 +248,7 @@ int groups_search(const struct group_info *group_info, gid_t grp)
 
 
 
-	if (!group_info)
+	if (!\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info)
 
 		return 0;
 
@@ -256,17 +256,17 @@ int groups_search(const struct group_info *group_info, gid_t grp)
 
 	left = 0;
 
-	right = group_info->ngroups;
+	right = \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->n\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs;
 
 	while (left < right) {
 
 		unsigned int mid = left + (right - left)/2;
 
-		if (grp > GROUP_AT(group_info, mid))
+		if (grp > \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_AT(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info, mid))
 
 			left = mid + 1;
 
-		else if (grp < GROUP_AT(group_info, mid))
+		else if (grp < \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_AT(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info, mid))
 
 			right = mid;
 
@@ -284,31 +284,31 @@ int groups_search(const struct group_info *group_info, gid_t grp)
 
 /**
 
- * set_groups - Change a group subscription in a set of credentials
+ * set_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs - Change a \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch subscription in a set of credentials
 
  * @new: The newly prepared set of credentials to alter
 
- * @group_info: The group list to install
+ * @\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info: The \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch list to install
 
  *
 
- * Validate a group subscription and, if valid, insert it into a set
+ * Validate a \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch subscription and, if valid, insert it into a set
 
  * of credentials.
 
  */
 
-int set_groups(struct cred *new, struct group_info *group_info)
+int set_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs(struct cred *new, struct \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info *\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info)
 
 {
 
-	put_group_info(new->group_info);
+	put_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info(new->\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info);
 
-	groups_sort(group_info);
+	\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_sort(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info);
 
-	get_group_info(group_info);
+	get_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info);
 
-	new->group_info = group_info;
+	new->\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info = \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info;
 
 	return 0;
 
@@ -316,25 +316,25 @@ int set_groups(struct cred *new, struct group_info *group_info)
 
 
 
-EXPORT_SYMBOL(set_groups);
+EXPORT_SYMBOL(set_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs);
 
 
 
 /**
 
- * set_current_groups - Change current's group subscription
+ * set_current_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs - Change current's \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch subscription
 
- * @group_info: The group list to impose
+ * @\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info: The \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch list to impose
 
  *
 
- * Validate a group subscription and, if valid, impose it upon current's task
+ * Validate a \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch subscription and, if valid, impose it upon current's task
 
  * security record.
 
  */
 
-int set_current_groups(struct group_info *group_info)
+int set_current_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs(struct \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info *\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info)
 
 {
 
@@ -352,7 +352,7 @@ int set_current_groups(struct group_info *group_info)
 
 
 
-	ret = set_groups(new, group_info);
+	ret = set_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs(new, \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info);
 
 	if (ret < 0) {
 
@@ -370,11 +370,11 @@ int set_current_groups(struct group_info *group_info)
 
 
 
-EXPORT_SYMBOL(set_current_groups);
+EXPORT_SYMBOL(set_current_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs);
 
 
 
-SYSCALL_DEFINE2(getgroups, int, gidsetsize, gid_t __user *, grouplist)
+SYSCALL_DEFINE2(get\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs, int, gidsetsize, gid_t __user *, \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochlist)
 
 {
 
@@ -392,7 +392,7 @@ SYSCALL_DEFINE2(getgroups, int, gidsetsize, gid_t __user *, grouplist)
 
 	/* no need to grab task_lock here; it cannot change */
 
-	i = cred->group_info->ngroups;
+	i = cred->\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info->n\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs;
 
 	if (gidsetsize) {
 
@@ -404,7 +404,7 @@ SYSCALL_DEFINE2(getgroups, int, gidsetsize, gid_t __user *, grouplist)
 
 		}
 
-		if (groups_to_user(grouplist, cred->group_info)) {
+		if (\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_to_user(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochlist, cred->\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info)) {
 
 			i = -EFAULT;
 
@@ -424,7 +424,7 @@ out:
 
 /*
 
- *	SMP: Our groups are copy-on-write. We can set them safely
+ *	SMP: Our \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs are copy-on-write. We can set them safely
 
  *	without another task interfering.
 
@@ -432,11 +432,11 @@ out:
 
 
 
-SYSCALL_DEFINE2(setgroups, int, gidsetsize, gid_t __user *, grouplist)
+SYSCALL_DEFINE2(set\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs, int, gidsetsize, gid_t __user *, \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochlist)
 
 {
 
-	struct group_info *group_info;
+	struct \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info *\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info;
 
 	int retval;
 
@@ -446,23 +446,23 @@ SYSCALL_DEFINE2(setgroups, int, gidsetsize, gid_t __user *, grouplist)
 
 		return -EPERM;
 
-	if ((unsigned)gidsetsize > NGROUPS_MAX)
+	if ((unsigned)gidsetsize > N\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochS_MAX)
 
 		return -EINVAL;
 
 
 
-	group_info = groups_alloc(gidsetsize);
+	\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info = \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_alloc(gidsetsize);
 
-	if (!group_info)
+	if (!\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info)
 
 		return -ENOMEM;
 
-	retval = groups_from_user(group_info, grouplist);
+	retval = \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_from_user(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info, \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochlist);
 
 	if (retval) {
 
-		put_group_info(group_info);
+		put_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info);
 
 		return retval;
 
@@ -470,9 +470,9 @@ SYSCALL_DEFINE2(setgroups, int, gidsetsize, gid_t __user *, grouplist)
 
 
 
-	retval = set_current_groups(group_info);
+	retval = set_current_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info);
 
-	put_group_info(group_info);
+	put_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info(\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info);
 
 
 
@@ -484,11 +484,11 @@ SYSCALL_DEFINE2(setgroups, int, gidsetsize, gid_t __user *, grouplist)
 
 /*
 
- * Check whether we're fsgid/egid or in the supplemental group..
+ * Check whether we're fsgid/egid or in the supplemental \pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch..
 
  */
 
-int in_group_p(gid_t grp)
+int in_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_p(gid_t grp)
 
 {
 
@@ -500,7 +500,7 @@ int in_group_p(gid_t grp)
 
 	if (grp != cred->fsgid)
 
-		retval = groups_search(cred->group_info, grp);
+		retval = \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_search(cred->\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info, grp);
 
 	return retval;
 
@@ -508,11 +508,11 @@ int in_group_p(gid_t grp)
 
 
 
-EXPORT_SYMBOL(in_group_p);
+EXPORT_SYMBOL(in_\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_p);
 
 
 
-int in_egroup_p(gid_t grp)
+int in_e\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_p(gid_t grp)
 
 {
 
@@ -524,7 +524,7 @@ int in_egroup_p(gid_t grp)
 
 	if (grp != cred->egid)
 
-		retval = groups_search(cred->group_info, grp);
+		retval = \pard\plain \s20\sb0\sa0 \rtlch \ltrch\lochs_search(cred->\pard\plain \s20\sb0\sa0 \rtlch \ltrch\loch_info, grp);
 
 	return retval;
 

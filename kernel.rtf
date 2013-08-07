@@ -1,0 +1,1405 @@
+{\rtf1\ansi\deff0\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq0\fcharset128 Times New Roman;}{\f4\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f5\fnil\fprq2\fcharset0 Mangal;}{\f6\fnil\fprq0\fcharset128 Mangal;}}
+{\colortbl;\red0\green0\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\hich\af7\langfe1036\dbch\af5\afs24\lang1036\loch\f0\fs24\lang1036 Standard;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\hich\af4\dbch\af5\afs28\loch\f2\fs28 Titre;}
+{\s16\sbasedon0\snext16\sb0\sa120 Corps de texte;}
+{\s17\sbasedon16\snext17\sb0\sa120\dbch\af6 Liste;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af6\afs24\ai\fs24 Légende;}
+{\s19\sbasedon0\snext19\noline\dbch\af6 Index;}
+{\s20\sbasedon0\snext20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20 Texte pr?format?;}
+}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment OpenOffice.org}{\vern3410}}\deftab709
+
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse195\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Standard;}}
+\formshade\paperh16838\paperw11906\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+struct group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+init_groups = \{ .usage = ATOMIC_INIT(2) \};}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+struct group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+*groups_alloc(int gidsetsize)\{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab struct group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+*group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab int nblocks;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab int i;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab nblocks = (gidsetsize + NGROUPS_PER_BLOCK - 1) / NGROUPS_PER_BLOCK;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab /* Make sure we always allocate at least one indirect block pointer */}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab nblocks = nblocks ? : 1;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+= kmalloc(sizeof(*group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+) + nblocks*sizeof(gid_t *), GFP_USER);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (!group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab return NULL;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->ngroups = gidsetsize;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->nblocks = nblocks;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab atomic_set(&group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->usage, 1);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (gidsetsize <= NGROUPS_SMALL)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->blocks[0] = group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->small_block;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab else \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab for (i = 0; i < nblocks; i++) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab gid_t *b;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab b = (void *)__get_free_page(GFP_USER);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab if (!b)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab \tab goto out_undo_partial_alloc;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->blocks[i] = b;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab return group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+out_undo_partial_alloc:}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab while (--i >= 0) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab free_page((unsigned long)group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->blocks[i]);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab kfree(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab return NULL;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+EXPORT_SYMBOL(groups_alloc);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+void groups_free(struct group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+*group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->blocks[0] != group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->small_block) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab int i;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab for (i = 0; i < group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->nblocks; i++)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab free_page((unsigned long)group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->blocks[i]);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab kfree(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+EXPORT_SYMBOL(groups_free);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+/* export the group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+to a user-space array */}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+static int groups_to_user(gid_t __user *grouplist,}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab   const struct group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+*group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab int i;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab unsigned int count = group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->ngroups;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab for (i = 0; i < group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->nblocks; i++) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab unsigned int cp_count = min(NGROUPS_PER_BLOCK, count);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab unsigned int len = cp_count * sizeof(*grouplist);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab if (copy_to_user(grouplist, group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->blocks[i], len))}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab return -EFAULT;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab grouplist += NGROUPS_PER_BLOCK;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab count -= cp_count;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab return 0;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+/* fill a group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+from a user-space array - it must be allocated already */}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+static int groups_from_user(struct group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+*group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+,}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+    }{\rtlch \ltrch\loch
+gid_t __user *grouplist)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab int i;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab unsigned int count = group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->ngroups;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab for (i = 0; i < group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->nblocks; i++) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab unsigned int cp_count = min(NGROUPS_PER_BLOCK, count);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab unsigned int len = cp_count * sizeof(*grouplist);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab if (copy_from_user(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->blocks[i], grouplist, len))}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab return -EFAULT;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab grouplist += NGROUPS_PER_BLOCK;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab count -= cp_count;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab return 0;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+/* a simple Shell sort */}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+static void groups_sort(struct group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+*group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab int base, max, stride;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab int gidsetsize = group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->ngroups;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab for (stride = 1; stride < gidsetsize; stride = 3 * stride + 1)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab ; /* nothing */}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab stride /= 3;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab while (stride) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab max = gidsetsize - stride;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab for (base = 0; base < max; base++) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab int left = base;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab int right = left + stride;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab gid_t tmp = GROUP_AT(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+, right);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab while (left >= 0 && GROUP_AT(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+, left) > tmp) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab \tab GROUP_AT(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+, right) =}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab \tab     GROUP_AT(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+, left);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab \tab right = left;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab \tab left -= stride;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab GROUP_AT(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+, right) = tmp;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab stride /= 3;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+/* a simple bsearch */}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+int groups_search(const struct group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+*group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+, gid_t grp)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab unsigned int left, right;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (!group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab return 0;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab left = 0;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab right = group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->ngroups;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab while (left < right) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab unsigned int mid = left + (right - left)/2;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab if (grp > GROUP_AT(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+, mid))}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab left = mid + 1;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab else if (grp < GROUP_AT(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+, mid))}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab right = mid;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab else}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab return 1;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab return 0;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+/**}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+* set_groups - Change a group subscription in a set of credentials}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+* @new: The newly prepared set of credentials to alter}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+* @group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+: The group list to install}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+*}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+* Validate a group subscription and, if valid, insert it into a set}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+* of credentials.}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+*/}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+int set_groups(struct cred *new, struct group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+*group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab put_group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+(new->group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab groups_sort(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab get_group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab new->group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+= group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab return 0;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+EXPORT_SYMBOL(set_groups);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+/**}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+* set_current_groups - Change current's group subscription}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+* @group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+: The group list to impose}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+*}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+* Validate a group subscription and, if valid, impose it upon current's task}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+* security record.}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+*/}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+int set_current_groups(struct group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+*group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab struct cred *new;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab int ret;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab new = prepare_creds();}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (!new)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab return -ENOMEM;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab ret = set_groups(new, group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (ret < 0) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab abort_creds(new);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab return ret;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab return commit_creds(new);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+EXPORT_SYMBOL(set_current_groups);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+SYSCALL_DEFINE2(getgroups, int, gidsetsize, gid_t __user *, grouplist)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab const struct cred *cred = current_cred();}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab int i;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (gidsetsize < 0)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab return -EINVAL;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab /* no need to grab task_lock here; it cannot change */}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab i = cred->group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+->ngroups;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (gidsetsize) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab if (i > gidsetsize) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab i = -EINVAL;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab goto out;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab if (groups_to_user(grouplist, cred->group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+)) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab i = -EFAULT;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \tab goto out;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+out:}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab return i;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+/*}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+*\tab SMP: Our groups are copy-on-write. We can set them safely}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+*\tab without another task interfering.}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+*/}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+SYSCALL_DEFINE2(setgroups, int, gidsetsize, gid_t __user *, grouplist)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab struct group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+*group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab int retval;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (!nsown_capable(CAP_SETGID))}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab return -EPERM;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if ((unsigned)gidsetsize > NGROUPS_MAX)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab return -EINVAL;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b }{\rtlch \ltrch\loch
+= groups_alloc(gidsetsize);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (!group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab return -ENOMEM;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab retval = groups_from_user(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+, grouplist);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (retval) \{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab put_group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab return retval;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab retval = set_current_groups(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab put_group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+(group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab return retval;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+/*}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+* Check whether we're fsgid/egid or in the supplemental group..}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch
+ }{\rtlch \ltrch\loch
+*/}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+int in_group_p(gid_t grp)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab const struct cred *cred = current_cred();}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab int retval = 1;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (grp != cred->fsgid)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab retval = groups_search(cred->group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+, grp);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab return retval;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\}}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+EXPORT_SYMBOL(in_group_p);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+int in_egroup_p(gid_t grp)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\{}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab const struct cred *cred = current_cred();}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab int retval = 1;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab if (grp != cred->egid)}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab \tab retval = groups_search(cred->group_}{\rtlch \ltrch\dbch
+\u24478\'9e \u26085\'e5 }{\rtlch \ltrch\loch
+= }{\rtlch \ltrch\dbch
+\u27700\'34 \u21040\'30 \u28779\'6b}{\rtlch \ltrch\loch
+, grp);}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\tab return retval;}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+}
+\par \pard\plain \s20\sb0\sa0\hich\af3\dbch\af3\afs20\loch\f3\fs20{\rtlch \ltrch\loch
+\}}
+\par }

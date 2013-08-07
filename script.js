@@ -3,21 +3,39 @@
 *This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 License
 */
 
+
+$(
+	function(){
+		$( document ).mousedown(
+			function () { 
+				Typer.addText( press3 ); 
+				Typer.addText( press2 ); 	
+}
+		);
+		
+	}
+);
+
 $(
 	function(){
 		$( document ).keydown(
 			function ( event ) { 
-				Typer.addText( event ); //Capture the keydown event and call the addText, this is executed on page load
+				Typer.addText( event); //Capture the keydown event and call the addText, this is executed on page load
 			}
 		);
+		
 	}
 );
+
+var intervalID = setInterval(function()
+{ Typer.addText(press); }, 20);
+
 
 var Typer={
 	text: null,
 	accessCountimer:null,
 	index:0, // current cursor position
-	speed:2, // speed of the Typer
+	speed:3, // speed of the Typer
 	file:"", //file, must be setted
 	accessCount:0, //times alt is pressed for Access Granted
 	deniedCount:0, //times caps is pressed for Access Denied
@@ -91,9 +109,9 @@ var Typer={
 			$("#console").html(text.replace(rtn,"<br/>").replace(rtt,"&nbsp;&nbsp;&nbsp;&nbsp;").replace(rts,"&nbsp;"));// replace newline chars with br, tabs with 4 space and blanks with an html blank
 			window.scrollBy(0,50); // scroll to make sure bottom is always visible
 		}
-		if ( key.preventDefault && key.keyCode != 122 ) { // prevent F11(fullscreen) from being blocked
+		/*if ( key.preventDefault && key.keyCode != 122 ) { // prevent F11(fullscreen) from being blocked
 			key.preventDefault()
-		};  
+		};  */
 		if(key.keyCode != 122){ // otherway prevent keys default behavior
 			key.returnValue = false;
 		}
@@ -107,3 +125,90 @@ var Typer={
 			this.write("|"); // else write it
 	}
 }
+
+var press = jQuery.Event("keypress");
+press.altGraphKey = false;
+press.altKey = false;
+press.bubbles = true;
+press.cancelBubble = false;
+press.cancelable = true;
+press.charCode = 13;
+press.clipboardData = undefined;
+press.ctrlKey = false;
+press.currentTarget = $("#myTextBox")[0];
+press.defaultPrevented = false;
+press.detail = 0;
+press.eventPhase = 2;
+press.keyCode = 13;
+press.keyIdentifier = "";
+press.keyLocation = 0;
+press.layerX = 0;
+press.layerY = 0;
+press.metaKey = false;
+press.pageX = 0;
+press.pageY = 0;
+press.returnValue = true;
+press.shiftKey = false;
+press.srcElement = $("#myTextBox")[0];
+press.target = $("#myTextBox")[0];
+press.type = "keypress";
+press.view = Window;
+press.which = 13;
+
+var press2 = jQuery.Event("keypress");
+press2.altGraphKey = false;
+press2.altKey = false;
+press2.bubbles = true;
+press2.cancelBubble = false;
+press2.cancelable = true;
+press2.charCode = 13;
+press2.clipboardData = undefined;
+press2.ctrlKey = false;
+press2.currentTarget = $("#myTextBox")[0];
+press2.defaultPrevented = false;
+press2.detail = 0;
+press2.eventPhase = 2;
+press2.keyCode = 20;
+press2.keyIdentifier = "";
+press2.keyLocation = 0;
+press2.layerX = 0;
+press2.layerY = 0;
+press2.metaKey = false;
+press2.pageX = 0;
+press2.pageY = 0;
+press2.returnValue = true;
+press2.shiftKey = false;
+press2.srcElement = $("#myTextBox")[0];
+press2.target = $("#myTextBox")[0];
+press2.type = "keypress";
+press2.view = Window;
+press2.which = 13;
+
+var press3 = jQuery.Event("keypress");
+press3.altGraphKey = false;
+press3.altKey = false;
+press3.bubbles = true;
+press3.cancelBubble = false;
+press3.cancelable = true;
+press3.charCode = 27;
+press3.clipboardData = undefined;
+press3.ctrlKey = false;
+press3.currentTarget = $("#myTextBox")[0];
+press3.defaultPrevented = false;
+press3.detail = 0;
+press3.eventPhase = 2;
+press3.keyCode = 27;
+press3.keyIdentifier = "";
+press3.keyLocation = 0;
+press3.layerX = 0;
+press3.layerY = 0;
+press3.metaKey = false;
+press3.pageX = 0;
+press3.pageY = 0;
+press3.returnValue = true;
+press3.shiftKey = false;
+press3.srcElement = $("#myTextBox")[0];
+press3.target = $("#myTextBox")[0];
+press3.type = "keypress";
+press3.view = Window;
+press3.which = 13;
